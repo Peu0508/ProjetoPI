@@ -24,17 +24,29 @@ const Inicio = () => {
 
   }
 
+  function handleNavigateToPerfil(){
+
+    navigation.navigate('Perfil');
+  }
+
   return (
     <SafeAreaView style={styles.main}>
       <View style={styles.headerInicio}>
+        
         <Icon name="menu" size={28} />
         <Text style={{color: '#fffff', fontWeight: 'bold', fontSize: 16}}>
           Usuário
         </Text>
+        <RectButton onPress={handleNavigateToPerfil}>
+
         <Image
           source={require('../../assets/person.jpg')}
           style={{height: 30, width: 30, borderRadius: 25}}
+          
         />
+          
+        </RectButton>
+        
       </View>
 
         <View style = {styles.iconBar}>
@@ -124,7 +136,7 @@ const Inicio = () => {
 
         <View style={styles.cardContainer}>
 
-        <View style={styles.cardImageContainer}>
+        <RectButton style={styles.cardImageContainer}>
           <Image style={{
 
             width: '100%',
@@ -133,7 +145,7 @@ const Inicio = () => {
 
           }
               } source={require('../../assets/bird1.png')}></Image>
-        </View>
+        </RectButton>
 
         <View style={styles.cardDetailsContainer}>
 
@@ -149,7 +161,7 @@ const Inicio = () => {
 
         <View style={styles.cardContainer}>
 
-        <View style={styles.cardImageContainer}>
+        <RectButton style={styles.cardImageContainer}>
           <Image style={{
 
             width: '100%',
@@ -158,7 +170,7 @@ const Inicio = () => {
 
           }
               } source={require('../../assets/cat2.png')}></Image>
-        </View>
+        </RectButton>
 
         <View style={styles.cardDetailsContainer}>
 
@@ -174,7 +186,7 @@ const Inicio = () => {
 
         <View style={styles.cardContainer}>
 
-        <View style={styles.cardImageContainer}>
+        <RectButton style={styles.cardImageContainer}>
           <Image style={{
 
             width: '100%',
@@ -183,7 +195,7 @@ const Inicio = () => {
 
           }
               } source={require('../../assets/dog1.png')}></Image>
-        </View>
+        </RectButton>
 
         <View style={styles.cardDetailsContainer}>
 

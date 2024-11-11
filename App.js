@@ -18,15 +18,11 @@ export default function App() {
     Ubuntu_700Bold
   });
 
-
-
   return (
     <>
       <StatusBar barStyle="dark-content" backgroundColor="transparent" translucent />
       <Routes />
     </>
-
-    
 
   );
 }

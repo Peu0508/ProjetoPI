@@ -6,6 +6,7 @@ import { Feather } from "@expo/vector-icons";
 import Home from './pages/Home';
 import Inicio from './pages/Inicio';
 import Detalhes from './pages/Detalhes/Detalhes';
+import Perfil from './pages/Perfil';
 
 const AppStack = createStackNavigator();
 
@@ -27,6 +28,7 @@ const Routes = () => {
             <AppStack.Screen name = 'Home' component={Home}></AppStack.Screen>
             <AppStack.Screen name = 'Inicio' component={Inicio}></AppStack.Screen>
             <AppStack.Screen name = 'Detalhes' component = {Detalhes}></AppStack.Screen>
+            <AppStack.Screen name = 'Perfil' component = {Perfil}></AppStack.Screen>
         </AppStack.Navigator>
     </NavigationContainer>
 
