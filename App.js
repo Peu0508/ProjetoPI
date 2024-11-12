@@ -9,6 +9,7 @@ import Routes from './src/routes';
 import { NavigationContainer } from '@react-navigation/native';
 
 import DetailsScreen from './src/pages/Detalhes/Detalhes';
+import { ScrollView } from 'react-native-gesture-handler';
 
 
 export default function App() {
@@ -19,10 +20,10 @@ export default function App() {
   });
 
   return (
-    <>
+<>
       <StatusBar barStyle="dark-content" backgroundColor="transparent" translucent />
       <Routes />
     </>
-
+  
   );
 }

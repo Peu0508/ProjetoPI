@@ -29,6 +29,12 @@ const Inicio = () => {
     navigation.navigate('Perfil');
   }
 
+  function handleNavigateToDetalhes2() {
+
+    navigation.navigate('Detalhes2');
+
+  }
+
   return (
     <SafeAreaView style={styles.main}>
       <View style={styles.headerInicio}>
@@ -136,7 +142,7 @@ const Inicio = () => {
 
         <View style={styles.cardContainer}>
 
-        <RectButton style={styles.cardImageContainer}>
+        <RectButton style={styles.cardImageContainer} onPress={handleNavigateToDetalhes2}>
           <Image style={{
 
             width: '100%',
@@ -144,13 +150,13 @@ const Inicio = () => {
             resizeMode: 'contain',
 
           }
-              } source={require('../../assets/bird1.png')}></Image>
+              } source={require('../../assets/bird2.png')}></Image>
         </RectButton>
 
         <View style={styles.cardDetailsContainer}>
 
         <Text style={styles.descriptionName}>Coco</Text>
-          <Text style={styles.descriptionText}>Papagaio</Text>
+          <Text style={styles.descriptionText}>Arara</Text>
           <Text style={styles.descriptionText}>2 Anos</Text>
           <Text style={styles.descriptionText}>
           <FontAwesome style={styles.mapIcon} name="map-marker" size={16} color="black"/>Recife</Text>
